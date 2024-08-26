@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+    /* padding e border nao vao afetar a largura */
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+
+    /* default is margin: 8px;  */
+    margin: 0px; 
+
+    /* since we are going to center everything, this makes the components fit together like cards,
+    so we use flex-direction: column; to ensure that they fit together from top to bottom
+    and we finish by centering them with align-items: center; and justify-content: center;*/
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    /* hv = viewport , so it will get the entire screen as size, 
+    and center baseid in the display: flex, column center config*/
+    height: 100vh;
+
+    overflow: hidden; /* hide scrollbars by default */
+}
+
